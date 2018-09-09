@@ -5,9 +5,18 @@ background-color: #0a0a0a
 
 h1
 {
+font-size: 50pt;
+}
+h2
+{
+font-size: 25pt;
+}
+
+.header
+{
   color: white;
   font-family: "verdana";
-  font-size: 50pt;
+
 }
 
 button
