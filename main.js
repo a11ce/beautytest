@@ -22,5 +22,5 @@ function goToScore() {
 
 function populateShareScore()
 {
-document.getElementById("shareScore").innerHTML += "<a href=\""+ window.location.href+ "\">"+ window.location.href + "</a>";
+document.getElementById("shareScore").innerHTML += "<a style=\"color:blue;\" href=\""+ window.location.href+ "\">"+ window.location.href + "</a>";
 }
