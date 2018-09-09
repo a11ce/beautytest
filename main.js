@@ -1,3 +1,5 @@
+
+
 function upload() {
   document.getElementById('fileInput').value = "";
   document.getElementById('fileInput').click();
@@ -5,7 +7,7 @@ function upload() {
 
 function redirect() {
 if (document.getElementById('fileInput').value != "") {
-  window.location.href = "calculate.html";
+  window.location.href = "calculate.html?id=" + Date.now();
 }
 }
 
@@ -14,5 +16,11 @@ function showScore() {
 }
 
 function goToScore() {
-  window.location.href = "results.html";
+  var id = window.location.href.slice( window.location.href.indexOf( '?' ) + 1 )
+  window.location.href = "results.html?" + id;
+}
+
+function populateShareScore()
+{
+document.getElementById("shareScore").innerHTML += "<a href=\""+ window.location.href+ "\">"+ window.location.href + "</a>";
 }
