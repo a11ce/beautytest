@@ -30,6 +30,12 @@ button:hover
 color: white;
 }
 
+input
+{
+position: absolute;
+top: -100px;
+}
+
 .content
 {
   margin: auto;

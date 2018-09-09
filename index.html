@@ -1,11 +1,14 @@
 <head>
 
   <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
 
 </head>
 <body>
+  <input onchange="redirect()" type="file" id="fileInput" accept="image/*">
+
   <div class="content">
     <h1>Beauty Test</h1>
-    <button>Upload your photo</button>
+    <button onclick="upload()">Upload your photo</button>
   </div>
 </body>
